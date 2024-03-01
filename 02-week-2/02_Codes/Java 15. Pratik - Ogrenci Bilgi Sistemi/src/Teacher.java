@@ -8,5 +8,4 @@ public class Teacher {
         this.mpno = mpno;
         this.branch = branch;
     }
-
 }

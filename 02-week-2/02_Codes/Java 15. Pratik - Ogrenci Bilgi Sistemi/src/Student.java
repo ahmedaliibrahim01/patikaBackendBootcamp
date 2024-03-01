@@ -1,5 +1,6 @@
 public class Student {
-    String name,stuNo;
+    String name;
+    String stuNo;
     int classes;
     Course mat;
     Course fizik;
