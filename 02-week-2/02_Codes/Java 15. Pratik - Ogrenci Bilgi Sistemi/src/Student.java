@@ -69,4 +69,5 @@ public class Student {
         System.out.println("Kimya Notu : " + this.kimya.note);
     }
 
+
 }
