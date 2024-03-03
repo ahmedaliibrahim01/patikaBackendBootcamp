@@ -5,7 +5,6 @@ public class Main {
                 {4,5,6},
                 {7,8,9},
         };
-
         System.out.println("<--Matris-->");
         for (int i = 0; i < matris.length; i++) {
             for (int j = 0; j < matris[i].length; j++) {
@@ -13,9 +12,7 @@ public class Main {
             }
             System.out.println();
         }
-
         int[][] matrisinTranspozunu = new int[matris.length][matris.length];
-
         System.out.println("<--Matrisin Transpozunu-->");
         for (int i = 0; i < matris.length; i++) {
             for (int j = 0; j < matris[i].length; j++) {
