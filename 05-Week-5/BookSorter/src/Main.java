@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -13,7 +14,7 @@ public class Main {
         Book book5 = new Book("The Catcher in the Rye", 1951, "J.D. Salinger", "16.07.1951");
 
         // Created a Set that sorts books by name
-        Set<Book> bookSetByNames = new TreeSet<>();
+        Set<Book> bookSetByNames = new HashSet<>();
         bookSetByNames.add(book1);
         bookSetByNames.add(book2);
         bookSetByNames.add(book3);
@@ -26,7 +27,7 @@ public class Main {
         }
 
         // Created a Set that sorts books by page number
-        Set<Book> bookSetByPageCount = new HashSet<>();
+        Set<Book> bookSetByPageCount = new TreeSet<>(Comparator.comparingInt(Book::getPageNumbers));;
         bookSetByPageCount.addAll(bookSetByNames);
 
         System.out.println("\n                    =============Thee books ordered by number of pages============= \n ");
